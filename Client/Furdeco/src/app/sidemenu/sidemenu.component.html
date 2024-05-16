@@ -1,0 +1,360 @@
+<aside class="scrollbar fixed top-0 left-0 z-40 w-72 lg:w-56 h-screen pt-14 transition-transform -translate-x-full bg-white border-r border-gray-200 lg:translate-x-0" aria-label="Sidenav" id="drawer-navigation">
+    <div class="overflow-y-auto py-5 px-3 h-full bg-white">
+        <!-- Menu (It's for mobile) -->
+        <ul class="space-y-0.5 inline lg:hidden">
+            <li class="bg-gray-200 py-2 px-4 mb-2 font-bold flex items-center">
+                <i class="fa-solid fa-cog text-lg text-gray-600 mr-2"></i>
+                <h2 style="color:black; font-size: 24px;">Configuration</h2>
+            </li>
+            <li>
+                <a href="index.html" class="flex items-center p-2 text-base font-medium text-primary rounded-lg hover:bg-acent1 group transition duration-75">
+                    <i class="fa-solid fa-house text-lg text-acent1 group-hover:text-white transition duration-75"></i>
+                    <span class="ml-3">Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <button type="button" class="flex items-center p-2 w-full text-base font-medium text-primary rounded-lg transition duration-75 group hover:bg-acent1" aria-controls="dropdown-teacher" data-collapse-toggle="dropdown-teacher">
+                    <i class="fa-solid fa-chalkboard-user text-lg text-acent1 transition duration-75 group-hover:text-white"></i>
+                    <span class="flex-1 ml-3 text-left whitespace-nowrap">Teacher</span>
+                    <i class="fa-solid fa-chevron-down text-base font-bold"></i>
+                </button>
+                <ul id="dropdown-teacher" class="tabs hidden py-2 space-y-1 pl-2">
+                    <li>
+                        <a href="#" class="flex items-center p-2 text-sm font-medium text-primary rounded-lg hover:bg-acent1 hover:text-white group transition duration-75">Teacher</a>
+                    </li>
+                    <li data-tab-target="#add_teacher">
+                        <a href="#" class="flex items-center p-2 text-sm font-medium text-primary rounded-lg hover:bg-acent1 hover:text-white group transition duration-75">Add Teacher</a>
+                    </li>
+                    <li data-tab-target="#teacher_billing">
+                        <a href="#" class="flex items-center p-2 text-sm font-medium text-primary rounded-lg hover:bg-acent1 hover:text-white group transition duration-75">Teacher Billing</a>
+                    </li>
+                    <li data-tab-target="#upload_data">
+                        <a href="#" class="flex items-center p-2 text-sm font-medium text-primary rounded-lg hover:bg-acent1 hover:text-white group transition duration-75">Upload From Excel</a>
+                    </li>
+                    <li data-tab-target="#branch_transfer">
+                        <a href="#" class="flex items-center p-2 text-sm font-medium text-primary rounded-lg hover:bg-acent1 hover:text-white group transition duration-75">Branch Transfer</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <button type="button" class="flex items-center p-2 w-full text-base font-medium text-primary rounded-lg transition duration-75 group hover:bg-acent1" aria-controls="dropdown-student" data-collapse-toggle="dropdown-student">
+                    <i class="fa-solid fa-graduation-cap text-lg text-acent1 transition duration-75 group-hover:text-white"></i>
+                    <span class="flex-1 ml-3 text-left whitespace-nowrap">Student</span>
+                    <i class="fa-solid fa-chevron-down text-base font-bold"></i>
+                </button>
+                <ul id="dropdown-student" class="tabs hidden py-2 space-y-1 pl-2">
+                    <li data-tab-target="#student">
+                        <a href="#" class="flex items-center p-2 text-sm font-medium text-primary rounded-lg hover:bg-acent1 hover:text-white group transition duration-75">Students</a>
+                    </li>
+                    <li data-tab-target="#change_billing">
+                        <a href="#" class="flex items-center p-2 text-sm font-medium text-primary rounded-lg hover:bg-acent1 hover:text-white group transition duration-75">Change Billing</a>
+                    </li>
+                    <li data-tab-target="#upload_data">
+                        <a href="#" class="flex items-center p-2 text-sm font-medium text-primary rounded-lg hover:bg-acent1 hover:text-white group transition duration-75">Upload From Excel</a>
+                    </li>
+                    <li data-tab-target="#admit_tc_report">
+                        <a href="#" class="flex items-center p-2 text-sm font-medium text-primary rounded-lg hover:bg-acent1 hover:text-white group transition duration-75">Admit and TC Report</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <button type="button" class="flex items-center p-2 w-full text-base font-medium text-primary rounded-lg transition duration-75 group hover:bg-acent1" aria-controls="dropdown-attendance" data-collapse-toggle="dropdown-attendance">
+                    <i class="fa-solid fa-clipboard-user text-lg text-acent1 transition duration-75 group-hover:text-white"></i>
+                    <span class="flex-1 ml-3 text-left whitespace-nowrap">Attendance</span>
+                    <i class="fa-solid fa-chevron-down text-base font-bold"></i>
+                </button>
+                <ul id="dropdown-attendance" class="tabs hidden py-2 space-y-1 pl-2">
+                    <li data-tab-target="#attendance_default">
+                        <a href="#" class="flex items-center p-2 text-sm font-medium text-primary rounded-lg hover:bg-acent1 hover:text-white group transition duration-75">Attendanace Default</a>
+                    </li>
+                    <li data-tab-target="#attendance_report">
+                        <a href="#" class="flex items-center p-2 text-sm font-medium text-primary rounded-lg hover:bg-acent1 hover:text-white group transition duration-75">Attendanace Report</a>
+                    </li>
+                    <li data-tab-target="#student_absent_payment">
+                        <a href="#" class="flex items-center p-2 text-sm font-medium text-primary rounded-lg hover:bg-acent1 hover:text-white group transition duration-75">Student Absent Payment</a>
+                    </li>
+                    <li data-tab-target="#absent_find_sms">
+                        <a href="#" class="flex items-center p-2 text-sm font-medium text-primary rounded-lg hover:bg-acent1 hover:text-white group transition duration-75">Absent Fine SMS</a>
+                    </li>
+                    <li>
+                        <button type="button" class="flex items-center p-2 w-full text-sm font-medium text-primary rounded-lg transition duration-75 group hover:bg-acent1" aria-controls="other" data-collapse-toggle="other">
+                            <span class="flex-1 text-left whitespace-nowrap">Other</span>
+                            <i class="fa-solid fa-chevron-down text-base font-bold"></i>
+                        </button>
+                        <ul id="other" class="hidden space-y-1 pl-2">
+                            <li>
+                                <a href="#" class="flex items-center p-2 text-sm font-medium text-primary rounded-lg hover:bg-acent1 hover:text-white group transition duration-75">Item</a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex items-center p-2 text-sm font-medium text-primary rounded-lg hover:bg-acent1 hover:text-white group transition duration-75">Item</a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex items-center p-2 text-sm font-medium text-primary rounded-lg hover:bg-acent1 hover:text-white group transition duration-75">Item</a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex items-center p-2 text-sm font-medium text-primary rounded-lg hover:bg-acent1 hover:text-white group transition duration-75">Item</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <button type="button" class="flex items-center p-2 w-full text-base font-medium text-primary rounded-lg transition duration-75 group hover:bg-acent1" aria-controls="dropdown-exam" data-collapse-toggle="dropdown-exam">
+                    <i class="fa-solid fa-file-pen text-lg text-acent1 transition duration-75 group-hover:text-white"></i>
+                    <span class="flex-1 ml-3 text-left whitespace-nowrap">Exam</span>
+                    <i class="fa-solid fa-chevron-down text-base font-bold"></i>
+                </button>
+                <ul id="dropdown-exam" class="tabs hidden py-2 space-y-1 pl-2">
+                    <li data-tab-target="#all_exam">
+                        <a href="#" class="flex items-center p-2 text-sm font-medium text-primary rounded-lg hover:bg-acent1 hover:text-white group transition duration-75">Exam</a>
+                    </li>
+                    <li data-tab-target="#add_exam">
+                        <a href="#" class="flex items-center p-2 text-sm font-medium text-primary rounded-lg hover:bg-acent1 hover:text-white group transition duration-75">Add Exam</a>
+                    </li>
+                    <li data-tab-target="#exam_head">
+                        <a href="#" class="flex items-center p-2 text-sm font-medium text-primary rounded-lg hover:bg-acent1 hover:text-white group transition duration-75">Exam Head</a>
+                    </li>
+                    <li data-tab-target="#exam_sub_head">
+                        <a href="#" class="flex items-center p-2 text-sm font-medium text-primary rounded-lg hover:bg-acent1 hover:text-white group transition duration-75">Exam Sub-Head</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="subject.html" class="flex items-center p-2 text-base font-medium text-primary rounded-lg hover:bg-acent1 group transition duration-75">
+                    <i class="fa-solid fa-book text-lg text-acent1 group-hover:text-white transition duration-75"></i>
+                    <span class="ml-3">Subject</span>
+                </a>
+            </li>
+            <li>
+                <button type="button" class="flex items-center p-2 w-full text-base font-medium text-primary rounded-lg transition duration-75 group hover:bg-acent1" aria-controls="dropdown-result" data-collapse-toggle="dropdown-result">
+                    <i class="fa-solid fa-square-poll-vertical text-lg text-acent1 transition duration-75 group-hover:text-white"></i>
+                    <span class="flex-1 ml-3 text-left whitespace-nowrap">Result</span>
+                    <i class="fa-solid fa-chevron-down text-base font-bold"></i>
+                </button>
+                <ul id="dropdown-result" class="tabs hidden py-2 space-y-1 pl-2">
+                    <li data-tab-target="#mark_input">
+                        <a href="#" class="flex items-center p-2 text-sm font-medium text-primary rounded-lg hover:bg-acent1 hover:text-white group transition duration-75">Mark Input</a>
+                    </li>
+                    <li data-tab-target="#mark_view">
+                        <a href="#" class="flex items-center p-2 text-sm font-medium text-primary rounded-lg hover:bg-acent1 hover:text-white group transition duration-75">Mark View</a>
+                    </li>
+                    <li data-tab-target="#result_view">
+                        <a href="#" class="flex items-center p-2 text-sm font-medium text-primary rounded-lg hover:bg-acent1 hover:text-white group transition duration-75">Result</a>
+                    </li>
+                    <li data-tab-target="#">
+                        <a href="#" class="flex items-center p-2 text-sm font-medium text-primary rounded-lg hover:bg-acent1 hover:text-white group transition duration-75">Tabulation</a>
+                    </li>
+                    <li data-tab-target="#">
+                        <a href="#" class="flex items-center p-2 text-sm font-medium text-primary rounded-lg hover:bg-acent1 hover:text-white group transition duration-75">Result By Student ID</a>
+                    </li>
+                    <li data-tab-target="#">
+                        <a href="#" class="flex items-center p-2 text-sm font-medium text-primary rounded-lg hover:bg-acent1 hover:text-white group transition duration-75">Commnets Input</a>
+                    </li>
+                    <li data-tab-target="#mark_input_by_excel">
+                        <a href="#" class="flex items-center p-2 text-sm font-medium text-primary rounded-lg hover:bg-acent1 hover:text-white group transition duration-75">Mark Input By Excel</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <button type="button" class="flex items-center p-2 w-full text-base font-medium text-primary rounded-lg transition duration-75 group hover:bg-acent1" aria-controls="dropdown-analysis" data-collapse-toggle="dropdown-analysis">
+                    <i class="fa-solid fa-chart-simple text-lg text-acent1 transition duration-75 group-hover:text-white"></i>
+                    <span class="flex-1 ml-3 text-left whitespace-nowrap">Mark Analysis</span>
+                    <i class="fa-solid fa-chevron-down text-base font-bold"></i>
+                </button>
+                <ul id="dropdown-analysis" class="tabs hidden py-2 space-y-1 pl-2">
+                    <li data-tab-target="#analysis_default">
+                        <a href="#" class="flex items-center p-2 text-sm font-medium text-primary rounded-lg hover:bg-acent1 hover:text-white group transition duration-75">Analysis</a>
+                    </li>
+                    <li data-tab-target="#default_list">
+                        <a href="#" class="flex items-center p-2 text-sm font-medium text-primary rounded-lg hover:bg-acent1 hover:text-white group transition duration-75">Default List</a>
+                    </li>
+                    <li data-tab-target="#merit_list">
+                        <a href="#" class="flex items-center p-2 text-sm font-medium text-primary rounded-lg hover:bg-acent1 hover:text-white group transition duration-75">Merit List</a>
+                    </li>
+                    <li data-tab-target="#result_analysis">
+                        <a href="#" class="flex items-center p-2 text-sm font-medium text-primary rounded-lg hover:bg-acent1 hover:text-white group transition duration-75">Resilt Analysis</a>
+                    </li>
+                    <li data-tab-target="#segregation">
+                        <a href="#" class="flex items-center p-2 text-sm font-medium text-primary rounded-lg hover:bg-acent1 hover:text-white group transition duration-75">Segregation</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <button type="button" class="flex items-center p-2 w-full text-base font-medium text-primary rounded-lg transition duration-75 group hover:bg-acent1" aria-controls="dropdown-task" data-collapse-toggle="dropdown-task">
+                    <i class="fa-solid fa-thumbtack text-lg text-acent1 transition duration-75 group-hover:text-white"></i>
+                    <span class="flex-1 ml-3 text-left whitespace-nowrap">Task</span>
+                    <i class="fa-solid fa-chevron-down text-base font-bold"></i>
+                </button>
+                <ul id="dropdown-task" class="tabs hidden py-2 space-y-1 pl-2">
+                    <li data-tab-target="#home_work">
+                        <a href="#" class="flex items-center p-2 text-sm font-medium text-primary rounded-lg hover:bg-acent1 hover:text-white group transition duration-75">Home Work</a>
+                    </li>
+                    <li data-tab-target="#exam_routine">
+                        <a href="#" class="flex items-center p-2 text-sm font-medium text-primary rounded-lg hover:bg-acent1 hover:text-white group transition duration-75">Exam Routine</a>
+                    </li>
+                    <li data-tab-target="#class_routine">
+                        <a href="#" class="flex items-center p-2 text-sm font-medium text-primary rounded-lg hover:bg-acent1 hover:text-white group transition duration-75">Class Routine</a>
+                    </li>
+                    <li data-tab-target="#syllabus">
+                        <a href="#" class="flex items-center p-2 text-sm font-medium text-primary rounded-lg hover:bg-acent1 hover:text-white group transition duration-75">Sullabus</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="setting.html" class="flex items-center p-2 text-base font-medium text-primary rounded-lg hover:bg-acent1 group transition duration-75">
+                    <i class="fa-solid fa-gear text-lg text-acent1 transition duration-75 group-hover:text-white"></i>
+                    <span class="ml-3">Setting</span>
+                </a>
+            </li>
+        </ul>
+       
+        <!-- Menu (It's for Lablet and Desktop) -->
+        <ul class="hidden lg:inline space-y-0.5">
+            <li class=" py-2 px-4 mb-2 font-bold flex items-center">
+                <i class="fa-solid fa-cog text-lg mr-2"></i>
+                <h2 style="color:black; font-size: 16px;">Configuration</h2>
+            </li>
+            <li>
+                <a [routerLink]="['/city']"  class="flex items-center p-2 text-base font-medium text-primary rounded-lg group transition duration-75 hover:bg-acent1 hover:text-white">
+                    <i class="fa-solid fa-house text-lg text-acent1 group-hover:text-white transition duration-75"></i>
+                    <span class="ml-3">City</span>
+                </a>
+            </li>
+
+            <li>
+                <a [routerLink]="['/country']" class="flex items-center p-2 w-full text-base font-medium text-primary rounded-lg transition duration-75 group hover:bg-acent1 hover:text-white">
+                    <i class="fa-solid fa-chalkboard-user text-lg text-acent1 transition duration-75 group-hover:text-white"></i>
+                    <span class="flex-1 ml-3 text-left whitespace-nowrap">Country</span>
+                </a>
+            </li>
+            <li>
+                <a href="student.html" class="flex items-center p-2 w-full text-base font-medium text-primary rounded-lg transition duration-75 group hover:bg-acent1 hover:text-white">
+                    <i class="fa-solid fa-graduation-cap text-lg text-acent1 transition duration-75 group-hover:text-white"></i>
+                    <span class="flex-1 ml-3 text-left whitespace-nowrap">Currency</span>
+                </a>
+            </li>
+            <li>
+                <a href="attendance.html" type="button" class="flex items-center p-2 w-full text-base font-medium text-primary rounded-lg transition duration-75 group hover:bg-acent1 hover:text-white">
+                    <i class="fa-solid fa-clipboard-user text-lg text-acent1 transition duration-75 group-hover:text-white"></i>
+                    <span class="flex-1 ml-3 text-left whitespace-nowrap">Delievery Status</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="exam.html" class="flex items-center p-2 w-full text-base font-medium text-primary rounded-lg transition duration-75 group hover:bg-acent1 hover:text-white">
+                    <i class="fa-solid fa-file-pen text-lg text-acent1 transition duration-75 group-hover:text-white"></i>
+                    <span class="flex-1 ml-3 text-left whitespace-nowrap">Department</span>
+                </a>
+            </li>
+            <li>
+                <a href="subject.html" class="flex items-center p-2 text-base font-medium text-primary rounded-lg hover:bg-acent1 group transition duration-75 hover:text-white">
+                    <i class="fa-solid fa-book text-lg text-acent1 group-hover:text-white transition duration-75"></i>
+                    <span class="ml-3">Designation</span>
+                </a>
+            </li>
+            <li>
+                <a href="result.html" class="flex items-center p-2 w-full text-base font-medium text-primary rounded-lg transition duration-75 group hover:bg-acent1 hover:text-white">
+                    <i class="fa-solid fa-square-poll-vertical text-lg text-acent1 transition duration-75 group-hover:text-white"></i>
+                    <span class="flex-1 ml-3 text-left whitespace-nowrap">Invoice Term </span>
+                </a>
+            </li>
+            <li>
+                <a href="analysis.html" class="flex items-center p-2 w-full text-base font-medium text-primary rounded-lg transition duration-75 group hover:bg-acent1 hover:text-white">
+                    <i class="fa-solid fa-chart-simple text-lg text-acent1 transition duration-75 group-hover:text-white"></i>
+                    <span class="flex-1 ml-3 text-left whitespace-nowrap">Language</span>
+                </a>
+            </li>
+            <li>
+                <a href="task.html" class="flex items-center p-2 w-full text-base font-medium text-primary rounded-lg transition duration-75 group hover:bg-acent1 hover:text-white">
+                    <i class="fa-solid fa-thumbtack text-lg text-acent1 transition duration-75 group-hover:text-white"></i>
+                    <span class="flex-1 ml-3 text-left whitespace-nowrap">Location</span>
+                </a>
+            </li>
+            <li>
+                <a href="setting.html" class="flex items-center p-2 text-base font-medium text-primary rounded-lg hover:bg-acent1 group transition duration-75 hover:text-white">
+                    <i class="fa-solid fa-gear text-lg text-acent1 transition duration-75 group-hover:text-white"></i>
+                    <span class="ml-3">Measurement</span>
+                </a>
+            </li>
+            <li>
+                <a href="setting.html" class="flex items-center p-2 text-base font-medium text-primary rounded-lg hover:bg-acent1 group transition duration-75">
+                    <i class="fa-solid fa-gear text-lg text-acent1 transition duration-75 group-hover:text-white"></i>
+                    <span class="ml-3">Postal Code</span>
+                </a>
+            </li>
+            <li>
+                <a href="setting.html" class="flex items-center p-2 text-base font-medium text-primary rounded-lg hover:bg-acent1 group transition duration-75">
+                    <i class="fa-solid fa-gear text-lg text-acent1 transition duration-75 group-hover:text-white"></i>
+                    <span class="ml-3">Prduct Charge Category</span>
+                </a>
+            </li>
+            <li>
+                <a href="setting.html" class="flex items-center p-2 text-base font-medium text-primary rounded-lg hover:bg-acent1 group transition duration-75">
+                    <i class="fa-solid fa-gear text-lg text-acent1 transition duration-75 group-hover:text-white"></i>
+                    <span class="ml-3">State</span>
+                </a>
+            </li>
+            <li>
+                <a href="setting.html" class="flex items-center p-2 text-base font-medium text-primary rounded-lg hover:bg-acent1 group transition duration-75">
+                    <i class="fa-solid fa-gear text-lg text-acent1 transition duration-75 group-hover:text-white"></i>
+                    <span class="ml-3">Vechile Size</span>
+                </a>
+            </li>
+            <li>
+                <a href="setting.html" class="flex items-center p-2 text-base font-medium text-primary rounded-lg hover:bg-acent1 group transition duration-75">
+                    <i class="fa-solid fa-gear text-lg text-acent1 transition duration-75 group-hover:text-white"></i>
+                    <span class="ml-3">Vechile</span>
+                </a>
+            </li>
+            <li>
+                <a href="setting.html" class="flex items-center p-2 text-base font-medium text-primary rounded-lg hover:bg-acent1 group transition duration-75">
+                    <i class="fa-solid fa-gear text-lg text-acent1 transition duration-75 group-hover:text-white"></i>
+                    <span class="ml-3">Route</span>
+                </a>
+            </li>
+            <li>
+                <a href="setting.html" class="flex items-center p-2 text-base font-medium text-primary rounded-lg hover:bg-acent1 group transition duration-75">
+                    <i class="fa-solid fa-gear text-lg text-acent1 transition duration-75 group-hover:text-white"></i>
+                    <span class="ml-3">Retailer</span>
+                </a>
+            </li>
+            <li>
+                <a href="setting.html" class="flex items-center p-2 text-base font-medium text-primary rounded-lg hover:bg-acent1 group transition duration-75">
+                    <i class="fa-solid fa-gear text-lg text-acent1 transition duration-75 group-hover:text-white"></i>
+                    <span class="ml-3">Supplier</span>
+                </a>
+            </li>
+            <li>
+                <a href="setting.html" class="flex items-center p-2 text-base font-medium text-primary rounded-lg hover:bg-acent1 group transition duration-75">
+                    <i class="fa-solid fa-gear text-lg text-acent1 transition duration-75 group-hover:text-white"></i>
+                    <span class="ml-3">Measurement</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!--<div class="hidden absolute bottom-0 left-0 justify-center p-4 space-x-4 w-full lg:flex bg-white z-20">
+        <a href="setting.html" data-tooltip-target="tooltip-settings" class="inline-flex w-9 h-9 justify-center items-center bg-bgLight text-acent1 rounded-xl cursor-pointer hover:text-white hover:bg-acent1">
+            <i class="fa-solid fa-gear text-md"></i>
+        </a>
+        <div id="tooltip-settings" role="tooltip" class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-acent1 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip">
+            Access
+            <div class="tooltip-arrow" data-popper-arrow></div>
+        </div>
+        <a href="#" data-tooltip-target="tooltip-tutorial" class="inline-flex w-9 h-9 justify-center items-center bg-bgLight text-acent1 rounded-xl cursor-pointer hover:text-white hover:bg-acent1">
+            <i class="fa-solid fa-video text-md"></i>
+        </a>
+        <div id="tooltip-tutorial" role="tooltip" class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-acent1 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip">
+            Tutorials
+            <div class="tooltip-arrow" data-popper-arrow></div>
+        </div>
+        <a href="#" data-tooltip-target="tooltip-support" class="inline-flex w-9 h-9 justify-center items-center bg-bgLight text-acent1 rounded-xl cursor-pointer hover:text-white hover:bg-acent1">
+            <i class="fa-solid fa-headset text-md"></i>
+        </a>
+        <div id="tooltip-support" role="tooltip" class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-acent1 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip">
+            Support
+            <div class="tooltip-arrow" data-popper-arrow></div>
+        </div>
+    </div>-->
+</aside>
